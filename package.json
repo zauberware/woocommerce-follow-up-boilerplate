@@ -10,12 +10,12 @@
     "dotenv": "^4.0.0",
     "imagemin-cli": "^3.0.0",
     "inliner": "^1.13.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.9.0",
     "node-sass-import": "^1.1.1",
-    "nodemailer": "^4.4.0",
-    "nodemon": "^1.12.1",
+    "nodemailer": "^4.6.6",
+    "nodemon": "^1.17.5",
     "parallelshell": "^3.0.2",
-    "pug": "^2.0.0-rc.4",
+    "pug": "^2.0.3",
     "pug-cli": "^1.0.0-alpha6"
   },
   "scripts": {
