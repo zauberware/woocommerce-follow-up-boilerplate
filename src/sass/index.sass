@@ -4,13 +4,19 @@
  *  GHOST NEWSLETTER
  */
 
-$fontMain: 'Glober W01', sans-serif
+$fontMain: 'Helvetica', sans-serif
+$background: #c7c6c5;
+$backgroundShaded: #a7a6a5;
+$backgroundSocial: #222222;
+$backgroundFooter: #000000;
+$colorPrimary: #7b599b;
+$colorheading: #020202;
+$colorLink: #ff3277;
+$color: #333333;
 
 body
-    background: #c7c6c5
-
-.bg--softPink
-    background-color: #ec4371
+    background: $background
+    color: $color
 
 .color--white
     color: #fff
@@ -38,22 +44,6 @@ body
     max-width: 960px
     width: 100%
 
-.logo
-    background-color: #4b92db
-    border-radius: 0 0 3px 3px
-    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
-    height: 65px
-    width: 126px
-    position: absolute
-    top: 30px
-    left: 50%
-    margin-left: -63px // half the width
-
-    img
-        margin-top: 8px
-        height: 48px
-        width: 80px
-
 .heroImage
     background-color: #fff
     width: 100%
@@ -68,7 +58,7 @@ body
     width: 100%
 
     h1
-        color: #ec4371
+        color: $colorheading
         font: 900 32px/1 $fontMain
         letter-spacing: 0.5px
         margin-bottom: 20px
@@ -97,7 +87,7 @@ body
     letter-spacing: 0.5px
 
 .relatedProducts
-    background-color: #e3e8e8
+    background-color: $backgroundShaded
 
 .relatedProducts__boxRow1,
 .relatedProducts__boxRow2
@@ -126,7 +116,7 @@ body
     padding: 25px 25px 0
 
     h2
-        color: #ec4371
+        color: $colorheading
         font: 900 24px/1.17em $fontMain
         letter-spacing: 0.5px
         text-align: center
@@ -151,7 +141,7 @@ body
     vertical-align: middle
 
 .productBox__price__large
-    color: #ec4371
+    color: $colorheading
     font: 900 20px/1 $fontMain
 
 .productBox__price__small
@@ -168,7 +158,7 @@ body
     width: 100%
 
 .button--seeMore
-    background-color: #ec4271
+    background-color: $colorPrimary
     border-radius: 4px
     color: #ffffff
     font: 600 14px/1 $fontMain
@@ -189,14 +179,14 @@ body
 
     h1,
     h1 p
-        color: #ec4371
+        color: $colorPrimary
         font: 900 32px/1 $fontMain
         letter-spacing: 0.5px
         text-align: center
 
     h3,
     h3 p
-        color: #4b92db
+        color: $colorLink
         font: 900 21px/1 $fontMain
         margin: 10px 0 10px
 
@@ -216,7 +206,7 @@ body
  */
 
 .ctaCards
-    background-color: #e3e8e8
+    background-color: $backgroundShaded
     width: 100%
 
 .ctaCards__card
@@ -250,7 +240,7 @@ body
 
     h4,
     h4 p
-        color: #ec4371
+        color: $colorheading
         font: 900 20px/1.25 $fontMain
         height: 50px // font-size * line-height * 2
         margin: 30px 20px 0
@@ -261,7 +251,7 @@ body
         margin: 10px 20px 30px
 
     a
-        color: #4b92db
+        color: $colorLink
         display: block
         font: 600 14px/1 $fontMain
         font-style: italic
@@ -273,7 +263,7 @@ body
  */
 
 .social
-    background-color: #4990e2
+    background-color: $backgroundSocial
     width: 100%
 
     td
@@ -318,7 +308,7 @@ body
  */
 
 .payment
-    background-color: #293232
+    background-color: $backgroundFooter
     width: 100%
 
 .payment__padding
@@ -342,7 +332,7 @@ body
     vertical-align: middle
 
     a
-        color: #ec4371
+        color: $colorheading
         text-decoration: underline
 
 .payment__icons
@@ -397,11 +387,11 @@ body
  */
 
 .footer
-    background-color: #e3e8e8
+    background-color: $backgroundFooter
     width: 100%
 
     td
-        color: #1f2929
+        color: #f4f4f4
         font: 600 12px/1.25em $fontMain
         letter-spacing: 0.5px
         text-align: center

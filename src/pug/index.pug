@@ -4,15 +4,12 @@ block body
     table.showInBrowser
         tbody
             tr
-                td.bg--softPink.showInBrowser__padding
+                td.showInBrowser__padding
                     table.wrapper(width='960' align='center')
                         tbody
                             tr
                                 td
                                     a.color--white(href='{section:weblink}') {section:weblink_text}
-
-    .logo
-        img(src='./img/logo.png' width='80' height='48' alt='Ghost Logo')
 
     table.heroImage
         tbody
@@ -45,7 +42,7 @@ block body
                                                 td
                                                     .heyUser__paragraph {section:welcome_text}
 
-    table.relatedProducts(bgcolor='#e3e8e8' width='100%' align='center')
+    table.relatedProducts( width='100%' align='center')
         tbody
             tr
                 td(align='center')
@@ -88,7 +85,7 @@ block body
                                     h3 {section:teaser_3_title}
                                     p {section:teaser_3_text}
 
-    table.ctaCards(bgcolor='#e3e8e8' width='100%' align='center')
+    table.ctaCards( width='100%' align='center')
         tbody
             tr
                 td.ctaCards__padding(align='center')
@@ -125,7 +122,7 @@ block body
                                                     p {section:feature_text_3}
                                                     a(href='{section:feature_link_3}') {section:feature_label_3}
 
-    table.social(bgcolor='#4990e2' width='100%' align='center')
+    table.social( width='100%' align='center')
         tbody
             tr
                 td
@@ -134,7 +131,7 @@ block body
                     a.twitter(href='https://twitter.com'): span Twitter
                     a.pinterest(href='https://www.pinterest.com/'): span Pinterest
 
-    table.payment(bgcolor='#293232' width='100%' align='center')
+    table.payment( width='100%' align='center')
         tbody
             tr
                 td.payment__padding
@@ -165,7 +162,7 @@ block body
                                             img(src='./img/payment-check.png' width='16' height='16' alt='')
                                             | Advance payment / Transfer
 
-    table.footer(bgcolor='#e3e8e8' width='100%' align='center')
+    table.footer( width='100%' align='center')
         tbody
             tr
                 td.footer__padding
