@@ -1,0 +1,34 @@
+//-
+    PRODUCT BOX
+    A producut with image, title, description, price, and a button ('Ansehen').
+
+table.productBox
+    tbody
+        tr
+            td.productBox__image
+                //- img(src='img/product-reminder.png' width='129' height='103' alt='Product name here')
+                ='{section:product_'+index+'_image}'
+        tr
+            td.productBox__title
+                h2='{section:product_'+index+'_title}'
+        tr
+            td.productBox__paragraph
+                p='{section:product_'+index+'_description}'
+        tr
+            td.productBox__footer
+                table(width='100%')
+                    tbody
+                        tr
+                            td.productBox__footer__paddingWrapper(width='100%' align='center')
+                                table(width='100%')
+                                    tbody
+                                        tr
+                                            td(align='left' width='40%').productBox__price
+                                                table(width='100%')
+                                                    tbody
+                                                        tr
+                                                            td.productBox__price__large='{section:product_'+index+'_price}'
+                                                        tr
+                                                            td.productBox__price__small='{section:product_'+index+'_price_netto}'
+                                            td(align='right' width='60%' height='100%')
+                                                a.productBox__button.button--seeMore(href='{section:product_'+index+'_link}')='{section:product_'+index+'_label}'

@@ -1,0 +1,40 @@
+{
+  "name": "woocommerce-follow-up-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate to generate a template for WooCommerce plugin Follo-Up E-Mails",
+  "private": true,
+  "main": "index.js",
+  "author": "Simon Franzen <simon@zauberware.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "dotenv": "^4.0.0",
+    "imagemin-cli": "^3.0.0",
+    "inliner": "^1.13.1",
+    "node-sass": "^4.7.2",
+    "node-sass-import": "^1.1.1",
+    "nodemailer": "^4.4.0",
+    "nodemon": "^1.12.1",
+    "parallelshell": "^3.0.2",
+    "pug": "^2.0.0-rc.4",
+    "pug-cli": "^1.0.0-alpha6"
+  },
+  "scripts": {
+    "compile": "npm run sass; npm run pug; npm run imagemin",
+    "build": "npm run sass; npm run pug; npm run imagemin; npm run inliner",
+    "start": "npm run watch-parallel",
+    "watch-parallel": "parallelshell 'npm run watch:sass' 'npm run watch:pug' 'npm run watch:images'",
+    "watch:sass": "nodemon -q -w './src/sass/' --ext sass --exec 'npm run sass'",
+    "watch:pug": "nodemon -q -w './src/pug/' --ext pug --exec 'npm run pug'",
+    "watch:images": "nodemon -q -w 'src/img/**' --ext jpg,jpeg,png,gif,svg --exec 'npm run imagemin'",
+    "sass": "node-sass --indented-syntax --importer 'node_modules/node-sass-import' --include-path 'src/sass/' < 'src/sass/index.sass' > 'dist/css/index.css'",
+    "pug": "pug -o 'dist/' 'src/pug/index.pug'",
+    "imagemin": "imagemin 'src/img/**' -o 'dist/img/'",
+    "test": "npm run build; npm run send-via-nodemailer",
+    "send-via-nodemailer": "node test/nodemailer.js",
+    "juice": "node juice.js",
+    "inliner": "inliner --noimages 'dist/index.html' > 'dist/index-2.html'"
+  },
+  "dependencies": {
+    "juice": "^4.3.1"
+  }
+}

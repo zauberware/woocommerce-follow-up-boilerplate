@@ -1,0 +1,5 @@
+.DS_Store
+*.sketch
+dist/
+.env
+node_modules
