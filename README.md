@@ -1,4 +1,4 @@
-# WooWommcerce Follow-Up Emails Template Builder
+# WooCommerce Follow-Up Emails Template Builder
 
 Helps you to develop awesome template for https://woocommerce.com/products/follow-up-emails/
 
