@@ -1,7 +1,7 @@
 {
   "name": "woocommerce-follow-up-boilerplate",
   "version": "1.0.0",
-  "description": "Boilerplate to generate a template for WooCommerce plugin Follo-Up E-Mails",
+  "description": "Boilerplate to generate a template for WooCommerce plugin Follow-Up Emails",
   "private": true,
   "main": "index.js",
   "author": "Simon Franzen <simon@zauberware.com>",

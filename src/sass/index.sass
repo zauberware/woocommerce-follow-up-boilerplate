@@ -1,0 +1,602 @@
+@import 'src/sass/imports/reset.sass'
+
+/**
+ *  GHOST NEWSLETTER
+ */
+
+$fontMain: 'Glober W01', sans-serif
+
+body
+    background: #c7c6c5
+
+.bg--softPink
+    background-color: #ec4371
+
+.color--white
+    color: #fff
+
+.td--alignMiddle
+    vertical-align: middle
+
+.showInBrowser
+    width: 100%
+
+.showInBrowser__padding
+    height: 30px
+    vertical-align: middle
+
+    td
+        text-align: left
+
+    a
+        display: block
+        font: 600 10px/1 $fontMain
+        letter-spacing: 0.5px
+
+.wrapper
+    margin: 0 auto
+    max-width: 960px
+    width: 100%
+
+.logo
+    background-color: #4b92db
+    border-radius: 0 0 3px 3px
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5)
+    height: 65px
+    width: 126px
+    position: absolute
+    top: 30px
+    left: 50%
+    margin-left: -63px // half the width
+
+    img
+        margin-top: 8px
+        height: 48px
+        width: 80px
+
+.heroImage
+    background-color: #fff
+    width: 100%
+
+.heroImage__bgImage
+    img
+        height: auto
+        max-width: 100%
+
+.heyUser
+    background-color: #fff
+    width: 100%
+
+    h1
+        color: #ec4371
+        font: 900 32px/1 $fontMain
+        letter-spacing: 0.5px
+        margin-bottom: 20px
+        text-align: left
+
+.heyUser__padding
+    padding: 30px 0 40px
+
+.heyUser__image
+    text-align: center
+
+    img
+        max-width: 218px
+        height: auto
+
+.heyUser__productName
+    color: #3a4646
+    font: 600 14px/1 $fontMain
+    letter-spacing: 0.5px
+    padding-top: 20px
+    text-align: center
+
+.heyUser__paragraph
+    color: #3a4646
+    font: 600 18px/1.4em $fontMain
+    letter-spacing: 0.5px
+
+.relatedProducts
+    background-color: #e3e8e8
+
+.relatedProducts__boxRow1,
+.relatedProducts__boxRow2
+    width: 31.25%
+
+    & > table
+        box-shadow: 0 1.9px 1.9px 0 rgba(58, 71, 71, 0.25)
+
+.relatedProducts__boxRow1
+    height: 100%
+    padding: 40px 15px 40px
+    vertical-align: middle
+
+
+.productBox
+    background-color: #fff
+
+.productBox__image
+    padding: 25px 25px 0
+    text-align: center
+
+    // img
+
+.productBox__title
+    height: 56px
+    padding: 25px 25px 0
+
+    h2
+        color: #ec4371
+        font: 900 24px/1.17em $fontMain
+        letter-spacing: 0.5px
+        text-align: center
+
+.productBox__paragraph
+    padding: 10px 25px 0
+
+    p
+        color: #3a4646
+        font: 400 14px/1.4em $fontMain
+        letter-spacing: 0.5px
+        text-align: center
+
+.productBox__footer
+    border-radius: 4px
+    padding: 15px 10px 10px
+
+    table
+        background-color: #e5eaea
+
+.productBox__price
+    vertical-align: middle
+
+.productBox__price__large
+    color: #ec4371
+    font: 900 20px/1 $fontMain
+
+.productBox__price__small
+    color: #3a4646
+    font: 400 9px/1 $fontMain
+    padding-top: 5px
+
+.productBox__footer__paddingWrapper
+    padding: 10px
+
+.productBox__button
+    display: inline-block
+    padding: 12px 0
+    width: 100%
+
+.button--seeMore
+    background-color: #ec4271
+    border-radius: 4px
+    color: #ffffff
+    font: 600 14px/1 $fontMain
+    text-align: center
+    text-decoration: none
+
+/**
+ *  FEATURE CARDS
+ */
+
+.features
+    background-color: #fff
+    text-align: center
+    width: 100%
+
+    td
+        text-align: center
+
+    h1,
+    h1 p
+        color: #ec4371
+        font: 900 32px/1 $fontMain
+        letter-spacing: 0.5px
+        text-align: center
+
+    h3,
+    h3 p
+        color: #4b92db
+        font: 900 21px/1 $fontMain
+        margin: 10px 0 10px
+
+    p
+        color: #3a4646
+        font: 400 13px/1.54 $fontMain
+
+.features__title
+    padding: 40px 0 0
+    text-align: center
+
+.features__feature
+    padding: 40px 20px 50px
+
+/**
+ *  CTAs
+ */
+
+.ctaCards
+    background-color: #e3e8e8
+    width: 100%
+
+.ctaCards__card
+    display: table-cell
+    height: 100%
+    vertical-align: middle
+    width: 31.25%
+
+    & > table
+        height: 100%
+
+.ctaCards__card--1
+    padding: 40px 20px 50px 0
+
+.ctaCards__card--2
+    padding: 40px 10px 50px 10px
+
+.ctaCards__card--3
+    padding: 40px 0 50px 20px
+
+.ctaCards__card__inside
+    background-color: #fff
+    box-shadow: 0 1.9px 1.9px 0 rgba(58, 71, 71, 0.25)
+    height: 100%
+    padding-bottom: 20px
+    text-align: center
+
+    img
+        height: auto
+        width: 100%
+
+    h4,
+    h4 p
+        color: #ec4371
+        font: 900 20px/1.25 $fontMain
+        height: 50px // font-size * line-height * 2
+        margin: 30px 20px 0
+
+    p
+        color: #3a4646
+        font: 400 14px/1.43 $fontMain
+        margin: 10px 20px 30px
+
+    a
+        color: #4b92db
+        display: block
+        font: 600 14px/1 $fontMain
+        font-style: italic
+        text-align: center
+        text-decoration: none
+
+/**
+ *  SOCIAL LINKS
+ */
+
+.social
+    background-color: #4990e2
+    width: 100%
+
+    td
+        padding: 30px 0
+        text-align: center
+
+    .facebook,
+    .instagram,
+    .twitter,
+    .pinterest
+        background-position: left center
+        background-repeat: no-repeat
+        background-size: 27px
+        color: #fff
+        display: inline-block
+        font: 600 14px/1 $fontMain
+        height: 27px
+        margin-left: 20px
+        padding-left: 32px
+        text-decoration: none
+
+        span
+            display: inline-block
+            margin-top: 6.5px
+            height: 14px
+
+    .facebook
+        background-image: url('../img/facebook.png')
+
+    .instagram
+        background-image: url('../img/instagram.png')
+
+    .twitter
+        background-image: url('../img/twitter.png')
+
+    .pinterest
+        background-image: url('../img/pinterest.png')
+
+/**
+ *  PAYMENT OPTIONS
+ *  Payment details, payment provider icons, etc.
+ */
+
+.payment
+    background-color: #293232
+    width: 100%
+
+.payment__padding
+    padding: 20px 0 30px
+
+.payment__text,
+.payment__small
+    width: 50%
+
+.payment__text td
+    color: #738c8c
+    font: 900 18px/1 $fontMain
+    letter-spacing: 0.5px;
+    text-align: left
+
+.payment__small td
+    color: #738c8c
+    font: 600 12px/1 $fontMain
+    letter-spacing: 0.5px
+    text-align: right
+    vertical-align: middle
+
+    a
+        color: #ec4371
+        text-decoration: underline
+
+.payment__icons
+    padding-top: 20px
+    width: 100%
+
+    & > div
+        height: 50px
+
+    .hasBg
+        background-color: #e2e7e7
+
+    .paypal
+        img
+            width: auto
+            height: 50px
+
+    .cards
+        background: #e2e7e7 url('../img/cards.png') no-repeat 170px center
+        background-size: 210px 40px
+        padding-right: 10px
+        width: 380px
+
+    .transfer
+        width: 255px
+
+        img
+            height: 16px
+            width: auto
+            margin: 0 5px -2px 0
+
+.paymentMethod
+    border-radius: 4px
+    display: inline-block
+    margin: 0 5px
+    position: relative
+    text-decoration: none
+    vertical-align: middle
+
+    span
+        color: #3a4646
+        font: 900 16px/1 $fontMain
+        height: 16px
+        left: 10px
+        margin-top: -8px
+        position: absolute
+        top: 50%
+
+/**
+ *  FOOTER
+ *  Copyright notice, address, some links
+ */
+
+.footer
+    background-color: #e3e8e8
+    width: 100%
+
+    td
+        color: #1f2929
+        font: 600 12px/1.25em $fontMain
+        letter-spacing: 0.5px
+        text-align: center
+
+        a
+            color: #1f2929
+
+.footer__padding
+    padding: 30px 0 40px
+
+.footer__topPadding
+    padding-top: 10px
+
+/**
+ *  CLIENT-SPECIFIC STYLES
+ */
+
+#outlook a
+    padding: 0
+    color: #e30073
+
+/* Force Outlook to provide a "view in browser" message */
+.ReadMsgBody
+    width: 100%
+
+/* Force Hotmail to display emails at full width */
+.ExternalClass
+    width: 100%
+
+/* Force Hotmail to display normal line spacing */
+.ExternalClass,
+.ExternalClass p,
+.ExternalClass span,
+.ExternalClass font,
+.ExternalClass td,
+.ExternalClass div
+    line-height: 100%
+
+/* Prevent WebKit and Windows mobile changing default text sizes */
+body,
+table,
+td,
+a
+    -webkit-text-size-adjust: 100%
+    -ms-text-size-adjust: 100%
+
+/* Remove spacing between tables in Outlook 2007 and up */
+table,
+td
+    mso-table-lspace: 0pt
+    mso-table-rspace: 0pt
+
+/* Allow smoother rendering of resized image in Internet Explorer */
+img
+    -ms-interpolation-mode: bicubic
+
+/* iOS BLUE LINKS */
+.appleBody a
+    color: #e30073
+    text-decoration: none
+
+.appleFooter a
+    color: #e30073
+    text-decoration: none
+
+/**
+ *  RESET STYLES (move to separate file)
+ */
+
+body
+    margin: 0
+    padding: 0
+
+img
+    border: 0
+    height: auto
+    line-height: 100%
+    outline: none
+    text-decoration: none
+
+table
+    border-collapse: collapse !important
+
+body
+    height: 100% !important
+    margin: 0
+    padding: 0
+    width: 100% !important
+
+.cred_image
+    display: inline !important
+
+/**
+ * MOBILE STYLES
+ */
+
+@media screen and (max-width: 825px)
+    /* ALLOWS FOR FLUID TABLES */
+    table.wrapper
+        min-width: 0px !important
+        width: 100% !important
+
+    /* USE THESE CLASSES TO HIDE CONTENT ON MOBILE */
+    td.mobile-hide
+        display: none
+
+    img.mobile-hide
+        display: none !important
+
+    img.img-max
+        height: auto !important
+        max-width: 100% !important
+        width: 100% !important
+
+    /* FULL-WIDTH TABLES */
+    table.responsive-table
+        width: 100% !important
+
+    /* UTILITY CLASSES FOR ADJUSTING PADDING ON MOBILE */
+    td.padding
+        padding: 10px 2.5% 15px 2.5% !important
+
+    td.padding-copy
+        padding: 10px 2.5% 10px 2.5% !important
+        text-align: center
+
+    td.padding-meta
+        padding: 30px 2.5% 0px 2.5% !important
+        text-align: center
+
+    td.no-pad
+        padding: 0 0 0px 0 !important
+
+    td.no-padding
+        padding: 0 !important
+
+    td.section-padding
+        padding: 10px !important
+
+    /* ADJUST BUTTONS ON MOBILE */
+    table.mobile-button-container
+        margin: 0 auto
+        width: 100% !important
+
+    a.mobile-button
+        border: 0 !important
+        font-size: 16px !important
+        padding: 15px !important
+        width: 80% !important
+
+    /**
+     *  CUSTOM MOBILE STYLES
+     */
+
+    .relatedProducts__boxRow1,
+    .relatedProducts__boxRow2,
+    .ctaCards__card,
+    .features__feature,
+    .payment__text,
+    .payment__small
+        display: block
+        margin: 10px 0 10px
+        padding: 0
+        width: 100%
+
+        & > tbody,
+        & > tbody > tr,
+        & > tbody > tr > td
+            display: block
+
+    .heyUser__padding
+        padding: 20px
+
+        table,
+        tbody,
+        tr,
+        td
+            display: block
+            text-align: center
+            width: 100%
+
+        h1
+            margin-top: 20px
+            text-align: center
+
+    .payment__text,
+    .payment__small
+        td
+            text-align: center
+            width: 100%
+
+    .paymentMethod
+        display: block
+        margin: 10px auto
+        text-align: center
+
+    .footer__padding
+        padding: 20px
